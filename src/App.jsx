@@ -24,14 +24,14 @@ const App = () => {
     <div>
       {!videoFinished && (
         <video id="intro-video" autoPlay muted loop className="video-bg">
-          <source src="../src/assets/video.webm" type="video/webm" />
+          <source src="../public/video.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       )}
       {videoFinished && (
         <div
           style={{
-            backgroundImage: "url('../src/assets/image.png')",
+            backgroundImage: "url('../public/image.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             width: "100%",
